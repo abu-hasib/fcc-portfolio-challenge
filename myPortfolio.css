@@ -6,7 +6,6 @@ html, body {
 
 footer {
 	padding: 100px 0;
-	background: #fff;
 }
 
 .red-apple {
@@ -34,4 +33,23 @@ header {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+}
+
+.text-centered {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#content {
+	padding: 50px 0;
+}
+
+.bg-gray-dark {
+	background-color: #D5D4D2;
+	/*background-color: rgb(36, 41, 46);*/
+}
+
+#focus {
+	padding-top: 15px;
+	padding: 50px 0;
 }
