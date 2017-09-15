@@ -13,12 +13,13 @@
            crossorigin="anonymous"></script>
            <script type="text/javascript" src="bootstrap.js"></script>
         	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+        	<script type="text/javascript" src="portfolio.js"></script>
         	
 </head>
-<body>
+<body ata-spy="scroll" data-target=".navbar" data-offset="50">
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
+		<div class="container-fluid" id="toggler">
 			<div class="navbar-header">
       				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggler" aria-expanded="false">
 				        <span class="sr-only">Toggle navigation</span>
@@ -26,21 +27,21 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
       				</button>
-      				<a class="navbar-brand" href="#">lateBl<span><i class="fa fa-apple red-apple" aria-hidden="true"></i></span><span><i class="fa fa-apple red-apple" aria-hidden="true"></i></span>mer</a>
+      				<a class="navbar-brand" href="#top">lateBl<span><i class="fa fa-apple red-apple" aria-hidden="true"></i></span><span><i class="fa fa-apple red-apple" aria-hidden="true"></i></span>mer</a>
     			</div>
 			
 			<div class="collapse navbar-collapse" id="toggler">
-				<ul class="nav navbar-nav navbar-right nav-pills nav-stacked">
+				<ul class="nav navbar-nav navbar-right nav nav-stacked">
 					<li role="presentation" class="active"><a href="#about">About</a></li>
 					<li role="presentation"><a href="#portfolio">Portfolio</a></li>
-					<li role="presentation"><a href="#about">Contact</a></li>
+					<li role="presentation"><a href="#contact">Contact</a></li>
 				</ul>	
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
 
 	<!-- Header -->
-	<header>
+	<header id="top">
 		<div class="text-vertical-center">
 			<h1><strong>Humble Beginnings</strong></h1>
 			<h2>How it all started</h2>
@@ -49,20 +50,22 @@
 	</header>
 
 	<!-- Page Content -->
-	<section id="content">
-		<div class="container ">
+	<section id="about">
+		<div class="container">
 			<div class="row text-centered">
 				<h1>Prologue</h1>
 				<hr class="small">
 				<div class="col-lg-10">
-					<p>Way back in College as a young CS student, my fascination with computers has reached its peak but was still stuck with a Toshiba NB200 Intel Atom running Windows 7 which was super slow, the need to understand the inner workings of computer led me to discovering <span>ubuntu</span> which exceeded my expectations and the love affair started since</p>
-					<p>By the way "The name is Abiola" Ridwan Abiola</p>
+					<p>Way back in College as a young CS student, my fascination with computers has reached its peak but was still stuck with a Toshiba NB200 Intel Atom running Windows 7 which was super slow, the need to understand the inner workings of computer led me to discovering <span>ubuntu</span> which exceeded my expectations and the love affair started ever since</p>
+					<p>By the way the name is</p>
+					<h2><span>Ridwan Abiola</span></h2>
+					<h4>Web Developer</h4>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<aside id="focus" class="bg-gray-dark">
+	<aside class="bg-gray-dark">
 		<div id="intro" class="container">
 			<div class="row text-centered">
 				<div class="col-lg-10">
@@ -105,8 +108,8 @@
 		</div>
 	</aside>
 	
-	<article>
-		<div id="portfolio" class="container">
+	<article  id="portfolio" >
+		<div class="container">
 			<div class="row text-centered">
 				<div class="col-lg-10 mx-auto">
 					<h1>Portfolio</h1>
@@ -138,9 +141,9 @@
 			</div>
 		</div>
 	</article>
-	<section>
+	<section id="contact">
 		<div class="container">
-			<h1 class="text-centered">Contact</h1>
+			<h1 class="text-centered" >Contact</h1>
 			<hr class="small">
 			<div class="row">
 				<div class="col-lg-8">
@@ -213,5 +216,16 @@
 		</div>
 	</footer>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<!-- <script>
+	// Floating label headings for the contact form
+  $(function() {
+    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
+      $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
+    }).on("focus", ".floating-label-form-group", function() {
+      $(this).addClass("floating-label-form-group-with-focus");
+    }).on("blur", ".floating-label-form-group", function() {
+      $(this).removeClass("floating-label-form-group-with-focus");
+    });
+</script> -->
 </body>
 </html>
